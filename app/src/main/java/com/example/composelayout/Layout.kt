@@ -1,5 +1,6 @@
 package com.example.composelayout
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -35,9 +36,9 @@ fun ActivitasPertama(modifier: Modifier){
             colors = CardDefaults.cardColors(
                 containerColor = Color.DarkGray
             )) {
-            Row(){
+            Row() {
                 val gambar = painterResource(R.drawable.logo_umy)
-                image(
+                Image(
                     painter = gambar,
                     contentDescription = null,
                     modifier = Modifier.size(100.dp).padding(5.dp)
@@ -49,10 +50,16 @@ fun ActivitasPertama(modifier: Modifier){
                         fontSize = 30.sp,
                         fontFamily = FontFamily.Cursive,
                         color = Color.White,
-                        modifier = Modifier.padding(top=15.dp)
+                        modifier = Modifier.padding(top = 15.dp)
+                    )
+                    Text(
+                        stringResource(R.string.alamat),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 10.dp)
                     )
                 }
             }
-    }
+        }
     }
 }
