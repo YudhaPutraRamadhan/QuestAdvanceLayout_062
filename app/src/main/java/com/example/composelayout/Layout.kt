@@ -1,6 +1,8 @@
 package com.example.composelayout
 
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.LineHeightStyle
 
 @Composable
@@ -9,6 +11,10 @@ fun ActivitasPertama(modifier: Modifier){
         .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-
+        Text(text = stringResource(id = R.string.prodi),
+            fontSize = 35.sp,
+            fontWeight = FontWeight.Bold)
+        Text(text = stringResource(id = R.string.univ),
+            fontSize = 22.sp)
     }
 }
