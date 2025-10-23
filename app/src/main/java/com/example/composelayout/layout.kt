@@ -68,7 +68,7 @@ fun ActivitasPertama(modifier: Modifier){
                 }
             }
         }
-        Spacer(modifier = Modifier.height(25.dp))
+        Spacer(modifier = Modifier.height(5.dp))
         Card (modifier = Modifier
             .fillMaxWidth(1f)
             .padding(12.dp),
@@ -89,13 +89,51 @@ fun ActivitasPertama(modifier: Modifier){
                         fontSize = 30.sp,
                         fontFamily = FontFamily.SansSerif,
                         color = Color.White,
-                        modifier = modifier.padding(top = 10.dp)
+                        modifier = modifier.padding(top = 1.dp)
                     )
                     Text(
                         stringResource(R.string.notelepon1),
-                        fontSize = 10.sp,
-                        color = Color.DarkGray,
-                        modifier = Modifier.padding(top = 5.dp)
+                        fontSize = 20.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 1.dp).padding(bottom = 8.dp)
+                    )
+                    Text(
+                        stringResource(R.string.alamat),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                }
+            }
+        }
+        Spacer(modifier = Modifier.height(5.dp))
+        Card (modifier = Modifier
+            .fillMaxWidth(1f)
+            .padding(12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color(color = 0xFF016B61)
+            )) {
+            Row() {
+                val gambar = painterResource(R.drawable.logo_umy)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp).padding(5.dp)
+                )
+                Spacer(modifier = Modifier.width(30.dp))
+                Column() {
+                    Text(
+                        stringResource(R.string.nama2),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.SansSerif,
+                        color = Color.White,
+                        modifier = modifier.padding(top = 1.dp)
+                    )
+                    Text(
+                        stringResource(R.string.notelepon2),
+                        fontSize = 20.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 1.dp).padding(bottom = 8.dp)
                     )
                     Text(
                         stringResource(R.string.alamat),
