@@ -1,5 +1,6 @@
 package com.example.composelayout
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -17,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
@@ -38,12 +40,12 @@ fun ActivitasPertama(modifier: Modifier){
         Card (modifier = Modifier
             .fillMaxWidth(1f)
             .padding(12.dp),
-            colors = CardDefaults.cardColor(
+            colors = CardDefaults.cardColors(
                 containerColor = Color.DarkGray
             )) {
             Row() {
-                val gambar = painterResources(R.drawable.logo_umy)
-                Images(
+                val gambar = painterResource(R.drawable.logo_umy)
+                Image(
                     painter = gambar,
                     contentDescription = null,
                     modifier = Modifier.size(100.dp).padding(5.dp)
