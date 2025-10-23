@@ -25,10 +25,10 @@ fun ActivitasPertama(modifier: Modifier){
         .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
         ) {
-        Text(stringResource(R.string.prodi),
+        Text(stringResources(R.string.prodi),
             fontSize = 35.sp,
             fontWeight = FontWeight.Bold)
-        Text(stringResource(R.string.univ),
+        Text(stringResources(R.string.univ),
             fontSize = 22.sp)
         Spacer(modifier = Modifier.height(25.dp))
         Card (modifier = Modifier
@@ -38,7 +38,7 @@ fun ActivitasPertama(modifier: Modifier){
                 containerColor = Color.DarkGray
             )) {
             Row() {
-                val gambar = painterResource(R.drawable.logo_umy)
+                val gambar = painterResources(R.drawable.logo_umy)
                 Image(
                     painter = gambar,
                     contentDescription = null,
@@ -47,14 +47,14 @@ fun ActivitasPertama(modifier: Modifier){
                 Spacer(modifier = Modifier.width(30.dp))
                 Column() {
                     Text(
-                        stringResource(R.string.nama),
+                        stringResources(R.string.nama),
                         fontSize = 30.sp,
                         fontFamily = FontFamily.Cursive,
                         color = Color.White,
                         modifier = Modifier.padding(top = 15.dp)
                     )
                     Text(
-                        stringResource(R.string.alamat),
+                        stringResources(R.string.alamat),
                         fontSize = 20.sp,
                         color = Color.Yellow,
                         modifier = Modifier.padding(top = 10.dp)
@@ -67,7 +67,7 @@ fun ActivitasPertama(modifier: Modifier){
                 .fillMaxSize()
         ) {
             Text(
-                stringResource(R.string.copy),
+                stringResources(R.string.copy),
                 modifier = Modifier
                     .align(Alignment.BottomCenter)
                     .padding(bottom = 50.dp)
