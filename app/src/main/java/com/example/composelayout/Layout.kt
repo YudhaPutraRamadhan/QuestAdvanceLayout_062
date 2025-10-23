@@ -1,6 +1,7 @@
 package com.example.composelayout
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -10,6 +11,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -21,14 +23,14 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun ActivitasPertama(modifier: Modifier){
-    column(modifier = Modifier.padding(top=100.dp)
+    Column(modifier = Modifier.padding(top=100.dp)
         .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
         ) {
-        Text(stringResources(R.string.prodi),
+        Text(stringResource(R.string.prodi),
             fontSize = 35.sp,
             fontWeight = FontWeight.Bold)
-        Text(stringResources(R.string.univ),
+        Text(stringResource(R.string.univ),
             fontSize = 22.sp)
         Spacer(modifier = Modifier.height(25.dp))
         Card (modifier = Modifier
@@ -39,7 +41,7 @@ fun ActivitasPertama(modifier: Modifier){
             )) {
             Row() {
                 val gambar = painterResources(R.drawable.logo_umy)
-                Image(
+                Images(
                     painter = gambar,
                     contentDescription = null,
                     modifier = Modifier.size(100.dp).padding(5.dp)
@@ -47,14 +49,14 @@ fun ActivitasPertama(modifier: Modifier){
                 Spacer(modifier = Modifier.width(30.dp))
                 Column() {
                     Text(
-                        stringResources(R.string.nama),
+                        stringResource(R.string.nama),
                         fontSize = 30.sp,
                         fontFamily = FontFamily.Cursive,
                         color = Color.White,
                         modifier = Modifier.padding(top = 15.dp)
                     )
                     Text(
-                        stringResources(R.string.alamat),
+                        stringResource(R.string.alamat),
                         fontSize = 20.sp,
                         color = Color.Yellow,
                         modifier = Modifier.padding(top = 10.dp)
