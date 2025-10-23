@@ -89,13 +89,13 @@ fun ActivitasPertama(modifier: Modifier){
                         fontSize = 30.sp,
                         fontFamily = FontFamily.SansSerif,
                         color = Color.White,
-                        modifier = modifier.padding(top = 1.dp)
+                        modifier = Modifier.padding(top = 10.dp)
                     )
                     Text(
                         stringResource(R.string.notelepon1),
                         fontSize = 20.sp,
                         color = Color.White,
-                        modifier = Modifier.padding(top = 1.dp).padding(bottom = 8.dp)
+                        modifier = Modifier.padding(top = 10.dp).padding(bottom = 1.dp)
                     )
                     Text(
                         stringResource(R.string.alamat),
@@ -127,13 +127,13 @@ fun ActivitasPertama(modifier: Modifier){
                         fontSize = 30.sp,
                         fontFamily = FontFamily.SansSerif,
                         color = Color.White,
-                        modifier = modifier.padding(top = 1.dp)
+                        modifier = Modifier.padding(top = 10.dp)
                     )
                     Text(
                         stringResource(R.string.notelepon2),
                         fontSize = 20.sp,
                         color = Color.White,
-                        modifier = Modifier.padding(top = 1.dp).padding(bottom = 8.dp)
+                        modifier = Modifier.padding(top = 10.dp).padding(bottom = 1.dp)
                     )
                     Text(
                         stringResource(R.string.alamat),
