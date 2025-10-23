@@ -74,7 +74,7 @@ fun ActivitasPertama(modifier: Modifier){
                 .fillMaxSize()
         ) {
             Text(
-                stringResources(R.string.copy),
+                stringResource(R.string.copy),
                 modifier = Modifier
                     .align(Alignment.BottomCenter)
                     .padding(bottom = 50.dp)
